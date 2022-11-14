@@ -1,13 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace RyanChandler\PluginSearch;
 
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
-class SkeletonServiceProvider extends PluginServiceProvider
+class PluginSearchServiceProvider extends PluginServiceProvider
 {
-    public static string $name = 'skeleton';
+    public static string $name = 'filament-plugin-search';
 
     protected array $resources = [
         // CustomResource::class,
@@ -22,15 +22,15 @@ class SkeletonServiceProvider extends PluginServiceProvider
     ];
 
     protected array $styles = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.css',
+        'plugin-filament-plugin-search' => __DIR__.'/../resources/dist/filament-plugin-search.css',
     ];
 
     protected array $scripts = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.js',
+        'plugin-filament-plugin-search' => __DIR__.'/../resources/dist/filament-plugin-search.js',
     ];
 
     // protected array $beforeCoreScripts = [
-    //     'plugin-skeleton' => __DIR__ . '/../resources/dist/skeleton.js',
+    //     'plugin-filament-plugin-search' => __DIR__ . '/../resources/dist/filament-plugin-search.js',
     // ];
 
     public function configurePackage(Package $package): void
