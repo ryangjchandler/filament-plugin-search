@@ -16,7 +16,7 @@
         ])>
     </div>
 
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         @forelse($this->plugins as $plugin)
             <div class="bg-white rounded-lg shadow overflow-hidden relative">
                 <img src="{{ $plugin->thumbnail_url }}" alt="{{ $plugin->name }}" class="h-64 object-cover object-left w-full">
