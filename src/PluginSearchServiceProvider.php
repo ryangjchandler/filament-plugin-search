@@ -9,12 +9,8 @@ class PluginSearchServiceProvider extends PluginServiceProvider
 {
     public static string $name = 'filament-plugin-search';
 
-    protected array $resources = [
-        // CustomResource::class,
-    ];
-
     protected array $pages = [
-        // CustomPage::class,
+        Pages\Plugins::class,
     ];
 
     protected array $widgets = [
@@ -35,6 +31,9 @@ class PluginSearchServiceProvider extends PluginServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package->name(static::$name);
+        $package
+            ->name(static::$name)
+            ->hasConfigFile()
+            ->hasViews();
     }
 }
