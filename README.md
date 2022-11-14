@@ -5,50 +5,21 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/filament-plugin-search/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ryangjchandler/filament-plugin-search/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/filament-plugin-search.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/filament-plugin-search)
 
+This package provides a simple page that lets you search for Filament plugins directly inside of your admin panel.
 
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+![](./art/screenshot.png)
 
 ## Installation
 
-You can install the package via composer:
+You can install the package via Composer:
 
 ```bash
 composer require ryangjchandler/filament-plugin-search
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-plugin-search-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-plugin-search-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-plugin-search-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
-```php
-$filament-plugin-search = new RyanChandler\PluginSearch();
-echo $filament-plugin-search->echoPhrase('Hello, RyanChandler!');
-```
+The page is automatically registered with Filament.
 
 ## Testing
 
