@@ -2,9 +2,9 @@
 
 namespace RyanChandler\PluginSearch\Models;
 
-use Sushi\Sushi;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Http;
+use Sushi\Sushi;
 
 final class Plugin extends Model
 {
